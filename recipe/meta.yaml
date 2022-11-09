@@ -29,6 +29,7 @@ requirements:
     - setuptools >=42
     - wheel
     - scikit-build >=0.12.0
+    - eigen
   run:
     - python
 

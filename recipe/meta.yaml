@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tweedledum-{{ version }}.tar.gz
-  sha256: 58d6f7a988b10c31be3faa1faf3e58288ef7e8159584bfa6ded45742f390309f
+  url: https://github.com/boschmitt/tweedledum/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: ba1c79808dfae1cf65a06eb6c5aeee4daf9e826386c582b5fea0c5c634f4d15b
 
 build:
   number: 2

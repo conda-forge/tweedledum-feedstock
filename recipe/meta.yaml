@@ -11,7 +11,7 @@ source:
   sha256: 58d6f7a988b10c31be3faa1faf3e58288ef7e8159584bfa6ded45742f390309f
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
   script:
     - export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"   # [osx]
@@ -20,6 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake >=3.18
     - make
     - ninja
